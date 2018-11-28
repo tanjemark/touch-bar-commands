@@ -1,6 +1,6 @@
 # Touch Bar Commands
 
-![Touch Bar Commands](touch-bar-commands.jpg)
+![Touch Bar Screenshot](touch-bar-screenshot.jpg)
 
 ---
 
