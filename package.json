@@ -1,76 +1,81 @@
 {
-    "name": "touch-bar-commands",
-    "displayName": "Touch Bar Commands",
-    "description": "Add useful shortcuts to your MacBook Touch Bar.",
-    "version": "1.0.0",
-    "engines": {
-        "vscode": "^1.29.0"
-    },
-    "categories": [
-        "Other"
+  "name": "touch-bar-commands",
+  "displayName": "Touch Bar Commands",
+  "description": "Add useful shortcuts to your MacBook Touch Bar.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanjemark/touch-bar-commands.git"
+  },
+  "version": "1.0.0",
+  "publisher": "tanjemark",
+  "engines": {
+    "vscode": "^1.29.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "macbook pro",
+    "touchbar",
+    "touch bar",
+    "extra buttons",
+    "shortcuts",
+    "vscode",
+    "visual studio code",
+    "macbook",
+    "developers"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "workbench.files.action.focusFilesExplorer",
+        "title": "🧳"
+      },
+      {
+        "command": "workbench.view.search",
+        "title": "🔎"
+      },
+      {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "title": "🗄"
+      },
+      {
+        "command": "editor.action.formatDocument",
+        "title": "💅"
+      },
+      {
+        "command": "workbench.action.togglePanel",
+        "title": "🤓"
+      }
     ],
-    "keywords": [
-        "macbook pro",
-        "touchbar",
-        "touch bar",
-        "extra buttons",
-        "shortcuts",
-        "vscode",
-        "visual studio code",
-        "macbook",
-        "developers"
-    ],
-    "contributes": {
-        "commands": [
-            {
-                "command": "workbench.files.action.focusFilesExplorer",
-                "title": "🧳"
-            },
-            {
-                "command": "workbench.view.search",
-                "title": "🔎"
-            },
-            {
-                "command": "workbench.action.toggleSidebarVisibility",
-                "title": "🗄"
-            },
-            {
-                "command": "editor.action.formatDocument",
-                "title": "💅"
-            },
-            {
-                "command": "workbench.action.togglePanel",
-                "title": "🤓"
-            }
-        ],
-        "menus": {
-            "touchBar": [
-                {
-                    "command": "workbench.files.action.focusFilesExplorer",
-                    "when": "!inDebugMode",
-                    "group": "display"
-                },
-                {
-                    "command": "workbench.view.search",
-                    "when": "!inDebugMode",
-                    "group": "display"
-                },
-                {
-                    "command": "workbench.action.toggleSidebarVisibility",
-                    "when": "!inDebugMode",
-                    "group": "display"
-                },
-                {
-                    "command": "editor.action.formatDocument",
-                    "when": "!inDebugMode && !editorReadonly",
-                    "group": "editing"
-                },
-                {
-                    "command": "workbench.action.togglePanel",
-                    "when": "!inDebugMode",
-                    "group": "editing"
-                }                
-            ]
+    "menus": {
+      "touchBar": [
+        {
+          "command": "workbench.files.action.focusFilesExplorer",
+          "when": "!inDebugMode",
+          "group": "display"
+        },
+        {
+          "command": "workbench.view.search",
+          "when": "!inDebugMode",
+          "group": "display"
+        },
+        {
+          "command": "workbench.action.toggleSidebarVisibility",
+          "when": "!inDebugMode",
+          "group": "display"
+        },
+        {
+          "command": "editor.action.formatDocument",
+          "when": "!inDebugMode && !editorReadonly",
+          "group": "editing"
+        },
+        {
+          "command": "workbench.action.togglePanel",
+          "when": "!inDebugMode",
+          "group": "editing"
         }
+      ]
     }
+  }
 }
